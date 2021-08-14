@@ -47,35 +47,35 @@ function showWeatherReport(response) {
     date.innerText = dateManage(todaydate);
 
     if(weathertype.textContent=='Clear'){
-        document.body.style.backgroundImage="url('../images/clear.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1544264747-d8af8eb09999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=758&q=80')";
     }
 
     else if(weathertype.textContent=='Clouds'){
-        document.body.style.backgroundImage="url('../images/cloud.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1611928482473-7b27d24eab80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80')";
     }
 
     else if(weathertype.textContent=='Rain'){
-        document.body.style.backgroundImage="url('../images/rain.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1438449805896-28a666819a20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')";
     }
 
     else if(weathertype.textContent=='Sunny'){
-        document.body.style.backgroundImage="url('../images/sunny.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80')";
     }
 
     else if(weathertype.textContent=='Snow'){
-        document.body.style.backgroundImage="url('../images/snow.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1583325958573-3c89e40551ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80')";
     }
 
     else if(weathertype.textContent=='Thunderstorm'){
-        document.body.style.backgroundImage="url('../images/thunderstorm.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1574781481375-74a09eba71e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')";
     }
 
     else if(weathertype.textContent=='Haze'){
-        document.body.style.backgroundImage="url('../images/haze.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1594492215832-a299f28a00c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')";
     }
 
     else{
-        document.body.style.backgroundImage="url('../images/anyweather.jpg')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')";
     }
 
 }
