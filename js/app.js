@@ -55,7 +55,7 @@ function showWeatherReport(response) {
     }
 
     else if(weathertype.textContent=='Rain'){
-        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1438449805896-28a666819a20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')";
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1433863448220-78aaa064ff47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80')";
     }
 
     else if(weathertype.textContent=='Sunny'){
