@@ -1,5 +1,4 @@
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-// a891f29c7db4e73d9a8c7adcbfb98419
 // `` means backtick symbol
 
 const weatherApi = {
