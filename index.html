@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="website, weather, forecast, temperature, weatherforecast, currenttemperature, weatherapi, city, forecasting">
+    <meta name="keywords"
+        content="website, weather, forecast, temperature, weatherforecast, currenttemperature, weatherapi, city, forecasting">
     <meta name="author" content="Harshit Singhal">
     <meta name="publisher" content="Harshit Singhal">
     <meta name="copyright" content="Harshit Singhal">
-    <meta name="description" content="weather forecast website predict or find the temperature of any city in the world">
+    <meta name="description"
+        content="weather forecast website predict or find the temperature of any city in the world">
     <meta name="page-type" content="weatherforecast">
     <meta name="audience" content="Everyone">
     <title>Weather Forecast | Website | App</title>
@@ -19,7 +21,17 @@
 </head>
 
 <body>
- 
+    <div class="heading">
+        <h1>Weather App</h1>
+        <h3>
+            <span class="text-slider-items">
+                find &nbsp;weather &nbsp;of your city
+            </span>
+            <strong class="text-slider"></strong>
+
+        </h3>
+    </div>
+
     <div class="app-main">
         <div class="searchInputBox">
             <input type="text" id="input-box" class="input-box" placeholder="Enter city name...." required>
@@ -27,19 +39,39 @@
 
         <div class="weather-body">
             <div class="location-details">
-                 <div class="city" id="city"></div>
-                 <div class="date" id="date"></div>
+                <div class="city" id="city"></div>
+                <div class="date" id="date"></div>
 
-                 <div class="weather-status">
-                     <div class="temp" id="temp"></div>
-                     <div class="min-max" id="min-max"></div>
-                     <div class="weather" id="weather"></div>
-                 </div>
+                <div class="weather-status">
+                    <div class="temp" id="temp"></div>
+                    <div class="min-max" id="min-max"></div>
+                    <div class="weather" id="weather"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="js/app.js" type="text/javascript"></script>
+   
+    <script src="js/typed.min.js"></script>
+
+     <!-- Add jquery cdn -->
+     <script src=
+     "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+         </script>
+         
+    <script>
+        if ($(".text-slider").length == 1) {
+            var typed_strings = $(".text-slider-items").text();
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split(", "),
+                typeSpeed: 70,
+                loop: true,
+                backDelay: 900,
+                backSpeed: 40,
+            });
+        }
+    </script>
 </body>
 
 </html>
