@@ -18,6 +18,7 @@ searchInputBox.addEventListener('keypress', (event) => {
     }
 });
 
+
 // Get Weather Report
 function getWeatherReport(city) {
     fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`).then((response) => {
@@ -45,6 +46,9 @@ function showWeatherReport(response) {
     let date = document.getElementById('date');
     var todaydate = new Date();
     date.innerText = dateManage(todaydate);
+
+    let image=document.getElementById('image');
+    image.innerHTML = ` <img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png" /> `;
 
     if(weathertype.textContent=='Clear'){
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1544264747-d8af8eb09999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=758&q=80')";
